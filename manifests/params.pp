@@ -37,8 +37,14 @@ class irc::params {
       $ic_daemon   = 'ircd'
       $ic_module_paths   = ['/usr/local/ircd/modules', '/usr/local/ircd/modules/autoload']
     }
+    ubuntu,debian: {
+      $ic_packages     = ['ircd-hybrid', 'whois']
+      $ic_conf_dir     = '/etc/ircd-hybrid'
+      $ic_daemon       = 'ircd-hybrid'
+      $ic_module_paths = ['/usr/lib/ircd-hybrid/modules', '/usr/lib/ircd-hybird/modules/autoload']
+    }
   }
-  
+
   ## General Configuration
   $ic_network_name  = 'localhost.localdomain'
   $ic_network_desc  = 'Brand New Unconfigured IRC Server!'
