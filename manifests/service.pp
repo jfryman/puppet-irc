@@ -15,7 +15,8 @@
 # This class file is not called directly
 class irc::service {
   service { $irc::params::ic_daemon:
-    ensure => 'running',
-    enable => 'true',
+    ensure    => 'running',
+    enable    => 'true',
+    hasstatus => 'false',
   }
 }
