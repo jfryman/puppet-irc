@@ -1,33 +1,34 @@
-# Class: irc
+# puppet-irc
 
-# Description
+## Description
 
 This module is designed to install and manage IRC Hybrid, an IRC server
 
 This module has been built and tested on RHEL/Debian systems.
 
-# Parameters:
+## Parameters:
 
-*  $network_name: The FQDN of the host where this server will reside.
-*  $network_desc: A friendly descriptor of the IRC server
-*  $admin_name: Friendly name of the Admin of the IRC server
-*  $admin_email: Email address of the Admin
-*  $listen_ip: Default IP for IRCD to listen on. Defaults to 127.0.0.1 if not set.
-*  $auth_domains: domains that are authorized to be in the local user class.
-*  $spoof_domain: domain used to spoof users that do not have domains.
-*  $operator_name: admin account for IRC management
-*  $operator_pass: admin password for IRC management. 
-*   
-# Actions:
+*  `$network_name`: The FQDN of the host where this server will reside.
+*  `$network_desc`: A friendly descriptor of the IRC server
+*  `$admin_name`: Friendly name of the Admin of the IRC server
+*  `$admin_email`: Email address of the Admin
+*  `$listen_ip`: Default IP for IRCD to listen on. Defaults to 127.0.0.1 if not set.
+*  `$auth_domains`: domains that are authorized to be in the local user class.
+*  `$spoof_domain`: domain used to spoof users that do not have domains.
+*  `$operator_name`: admin account for IRC management
+*  `$operator_pass`: admin password for IRC management. 
+
+
+## Actions:
 
 This module will install a single IRC and configure it for usage. 
 
 
-# Requires:
+## Requires:
 
 - `Class[stdlib]`. This is Puppet Labs standard library to include additional methods for use within Puppet. [https://github.com/puppetlabs/puppetlabs-stdlib]
 
-# Sample Usage:
+## Sample Usage:
 
 ```
   class { 'irc':
