@@ -38,7 +38,7 @@ class irc::params {
       $ic_module_paths   = ['/usr/local/ircd/modules', '/usr/local/ircd/modules/autoload']
     }
     ubuntu,debian: {
-      $ic_packages     = ['ircd-hybrid', 'whois']
+      $ic_packages     = ['ircd-hybrid']
       $ic_conf_dir     = '/etc/ircd-hybrid'
       $ic_daemon       = 'ircd-hybrid'
       $ic_module_paths = ['/usr/lib/ircd-hybrid/modules', '/usr/lib/ircd-hybird/modules/autoload']
