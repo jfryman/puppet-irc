@@ -1,0 +1,12 @@
+{
+  "name": "jfryman-irc",
+  "version": "0.0.1",
+  "author": "James Fryman",
+  "license": "Apache-2.0",
+  "summary": "Puppet irc server management module",
+  "source": "https://github.com/jfryman/puppet-irc",
+  "issues_url": "https://github.com/jfryman/puppet-irc/issues",
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_requirement": ">= 3.2.0 < 5.0.0" }
+  ]
+}
